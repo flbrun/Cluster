@@ -1,0 +1,5 @@
+# .sops.yaml
+creation_rules:
+  - path_regex: (secrets\.yaml|controlplane\.yaml|worker\.yaml|talosconfig)$
+    age:
+      - age1quzmq5ht6jund5x6kmlm4m4gjc8l9mh0qh3tvdt4gnkryasqacaq64kjx7

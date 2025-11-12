@@ -1,0 +1,20 @@
+machine:
+  network:
+    hostname: talos-opi2-rk3588
+    interfaces:
+      - interface: bond0
+        bond:
+          mode: active-backup
+          interfaces:
+            - enP3p49s0
+            - enP4p65s0
+        dhcp: false
+        addresses:
+          - 192.168.1.112/24
+        routes:
+          - network: 0.0.0.0/0
+            gateway: 192.168.1.2
+  install:
+    image: ghcr.io/siderolabs/installer:v1.11.5
+    disk: /dev/mmcblk0
+    wipe: true
