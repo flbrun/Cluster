@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - flux-system
   - cert-manager
+  - istio
   - gateways
