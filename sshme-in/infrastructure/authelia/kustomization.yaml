@@ -4,3 +4,4 @@ namespace: auth
 resources:
   - authelia-release.yaml
   - auth-namespace.yaml
+  - route.yaml
