@@ -2,6 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: authelia
+  namespace: auth
 spec:
   interval: 10m
   chart:
@@ -12,7 +13,7 @@ spec:
         kind: HelmRepository
         name: authelia
         namespace: flux-system
-    values:
-      storage:
-        local:
-          enabled: true
+  values:
+    storage:
+      local:
+        enabled: true
