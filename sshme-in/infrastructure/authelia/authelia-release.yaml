@@ -12,3 +12,7 @@ spec:
         kind: HelmRepository
         name: authelia
         namespace: flux-system
+    values:
+      storage:
+        local:
+          enabled: true
