@@ -14,21 +14,25 @@ spec:
         name: authelia
         namespace: flux-system
   values:
+    pod:
+      kind: Deployment
+
     configMap:
-      storage:
-        local:
+      authentication_backend:
+        file:
           enabled: true
-      notifier:
-        filesystem:
-          enabled: true
-      session:
-        cookies:
-          - subdomain: "auth"
-            domain: "sshme.in"
-            path: "/"
-            default_redirection_url: "https://auth.sshme.in"
-            name: "authelia_session"
-            same_site: "lax"
-            expiration: "1h"
-            inactivity: "5m"
-            remember_me: "1M"
+          path: /config/users_database.yml
+
+        notifier:
+          filesystem:
+            enabled: true
+            filename: /config/notification.txt
+
+        storage:
+          local:
+            enabled: true
+            path: /config/db.sqlite3
+
+        session:
+          cookies:
+            - domain: "sshme.in"
