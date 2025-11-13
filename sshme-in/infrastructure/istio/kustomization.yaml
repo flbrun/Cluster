@@ -7,4 +7,4 @@ resources:
   - ztunnel.yaml
   - cni-node-agent.yaml
   - istio-system-namespace.yaml
-  - gateway.api-crds.yaml
+#  - gateway.api-crds.yaml
