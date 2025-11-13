@@ -36,3 +36,4 @@ spec:
       session:
         cookies:
           - domain: "sshme.in"
+            subdomain: "auth"
