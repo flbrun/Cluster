@@ -5,3 +5,4 @@ resources:
   - metallb-release.yaml
   - ippool.yaml
   - advertisement.yaml
+  - metallb-system-namespace.yaml
