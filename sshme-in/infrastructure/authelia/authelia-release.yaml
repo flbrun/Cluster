@@ -18,3 +18,5 @@ spec:
       storage:
         local:
           enabled: true
+      filesystem:
+        enabled: true
