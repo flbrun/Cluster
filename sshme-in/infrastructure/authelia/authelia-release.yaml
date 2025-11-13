@@ -18,5 +18,6 @@ spec:
       storage:
         local:
           enabled: true
-      filesystem:
-        enabled: true
+      notifier:
+        filesystem:
+          enabled: true
