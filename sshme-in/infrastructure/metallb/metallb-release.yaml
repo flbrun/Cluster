@@ -4,8 +4,6 @@ metadata:
   name: metallb
 spec:
   interval: 10m
-  releaseName: metallb
-  targetNamespace: metallb-system
   chart:
     spec:
       chart: metallb
@@ -20,3 +18,8 @@ spec:
         enabled: false
       excludeInterfaces:
         enabled: false
+      interfaces:
+        - enp1s0
+        - bond0
+        - enP3p49s0
+        - enP4p65s0
