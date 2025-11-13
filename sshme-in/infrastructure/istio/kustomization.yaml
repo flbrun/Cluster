@@ -5,6 +5,6 @@ resources:
   - base.yaml
   - istiod.yaml
   - ztunnel.yaml
-  - node-agent.yaml
+  - cni-node-agent.yaml
   - istio-system-namespace.yaml
   - gateway.api-crds.yaml
