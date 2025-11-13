@@ -4,3 +4,5 @@ namespace: istio-ingress
 resources:
   - cluster-certificate.yaml
   - istio-ingress-namespace.yaml
+  - default-gateway.yaml
+  - http-redirect.yaml
