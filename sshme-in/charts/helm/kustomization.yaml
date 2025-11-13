@@ -4,4 +4,4 @@ namespace: flux-system
 resources:
   - jetstack.yaml
   - istio.yaml
-
+  - authelia.yaml
