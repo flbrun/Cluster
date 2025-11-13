@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: cert-manager
 resources:
   - cert-manager-release.yaml
-  #- cluster-issuer.yaml
-  #- cloudflare-api-token-secret.yaml
-  #- letsencrypt-dns01-private-key-secret.yaml
+  - cluster-issuer.yaml
+  - cloudflare-api-token-secret.yaml
+  - letsencrypt-dns01-private-key-secret.yaml
   - namespace.yaml
