@@ -23,16 +23,16 @@ spec:
           enabled: true
           path: /config/users_database.yml
 
-        notifier:
-          filesystem:
-            enabled: true
-            filename: /config/notification.txt
+      notifier:
+        filesystem:
+          enabled: true
+          filename: /config/notification.txt
 
-        storage:
-          local:
-            enabled: true
-            path: /config/db.sqlite3
+      storage:
+        local:
+          enabled: true
+          path: /config/db.sqlite3
 
-        session:
-          cookies:
-            - domain: "sshme.in"
+      session:
+        cookies:
+          - domain: "sshme.in"
