@@ -8,5 +8,4 @@ cluster:
         cni:
             name: custom
             urls:
-                - https://raw.githubusercontent.com/projectcalico/calico/v3.31.0/manifests/calico.yaml
-                - https://raw.githubusercontent.com/flbrun/calico-config/main/ippool.yaml
+                - https://raw.githubusercontent.com/flbrun/calico/main/calico.yaml
