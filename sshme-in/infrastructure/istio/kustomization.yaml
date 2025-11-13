@@ -4,4 +4,4 @@ namespace: istio-system
 resources:
   - ambient-release.yaml
   - istio-system-namespace.yaml
-#  - gateway.api-crds.yaml
+  - gateway-api-1-4-0.yaml
