@@ -26,5 +26,3 @@ spec:
           - "^docker.*"
       frr:
         enabled: false
-      excludeInterfaces:
-        enabled: false
