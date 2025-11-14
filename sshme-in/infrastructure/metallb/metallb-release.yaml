@@ -18,8 +18,3 @@ spec:
         enabled: false
       excludeInterfaces:
         enabled: false
-      interfaces:
-        - enp1s0
-        - bond0
-        - enP3p49s0
-        - enP4p65s0
