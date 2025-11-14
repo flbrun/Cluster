@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: homepage-configs
+data:
+  settings.yaml: |-
+    title: SSHM3-1N
+    background: https://w.wallhaven.cc/full/8g/wallhaven-8g3pro.png
+    theme: dark
+    language: de
+    headerStyle: clean
+    hideVersion: true
+    statusStyle: dot
+    layout:
+      Infrastructure:
+        style: row
+        columns: 4
+        icon: mdi-server
+      ASN:
+        style: row
+        columns: 4
+        icon: mdi-mixcloud
+      Media:
+        style: row
+        columns: 4
+        icon: mdi-movie
+      Home:
+        style: row
+        columns: 4
+        icon: mdi-home
+      Other:
+        style: row
+        columns: 4
+        icon: mdi-linux
+  bookmarks.yaml: |
+    ---
+    # For configuration options and examples, please see:
+    # https://gethomepage.dev/latest/configs/bookmarks
+
+    - Developer:
+        - Github:
+            - abbr: GH
+              href: https://github.com/
+        - Flux-Repo:
+            - abbr: GH
+              href: https://github.com/flbrun/flux-cluster
+  services.yaml: |-
+    ---
+  widgets.yaml: |
+    ---
+    # For configuration options and examples, please see:
+    # https://gethomepage.dev/latest/configs/widgets
+
+    - search:
+        provider: custom
+        url: https://www.ecosia.org/search?q=
+        target: _blank
+        suggestionUrl: https://ac.ecosia.org/autocomplete?type=list&q=
+        showSearchSuggestions: true
+  kubernetes.yaml: |-
+    mode: cluster
+    gateway: true
+  docker.yaml: |-
+    ---
+  custom.css: ""
+  custom.js: ""
