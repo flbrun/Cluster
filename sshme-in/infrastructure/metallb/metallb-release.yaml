@@ -14,6 +14,16 @@ spec:
         namespace: flux-system
   values:
     speaker:
+      logLevel: all
+      excludeInterfaces:
+        enabled: true
+        interfaces:
+          - "^cali.*"
+          - "^kube.*"
+          - "^veth.*"
+          - "^flannel.*"
+          - "^lo"
+          - "^docker.*"
       frr:
         enabled: false
       excludeInterfaces:
