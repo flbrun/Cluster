@@ -14,7 +14,6 @@ spec:
         namespace: flux-system
   values:
     speaker:
-      logLevel: all
       excludeInterfaces:
         enabled: true
         interfaces:
