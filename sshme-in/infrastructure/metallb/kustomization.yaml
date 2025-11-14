@@ -4,5 +4,5 @@ namespace: metallb-system
 resources:
   - metallb-namespace.yaml
   - metallb-release.yaml
-  #- ippool.yaml
-  #- advertisement.yaml
+  - ippool.yaml
+  - advertisement.yaml
