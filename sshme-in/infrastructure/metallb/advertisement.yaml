@@ -3,10 +3,5 @@ kind: L2Advertisement
 metadata:
   name: advert
 spec:
-  interfaces:
-    - enp1s0
-    - bond0
-    - enP3p49s0
-    - enP4p65s0
   ipAddressPools:
     - public
