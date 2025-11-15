@@ -6,4 +6,4 @@ resources:
   - cert-manager
   - istio
   - gateways
-  - authelia
+  - auth
