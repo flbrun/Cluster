@@ -6,3 +6,4 @@ resources:
   - istio.yaml
   - authelia.yaml
   - metallb.yaml
+  - self-hosters-by-night.yaml
