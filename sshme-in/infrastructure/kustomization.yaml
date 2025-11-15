@@ -4,6 +4,6 @@ resources:
   - flux-system
   - metallb
   - cert-manager
-  - istio
-  - gateways
+  # - istio
+  # - gateways
   - auth
